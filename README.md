@@ -1,5 +1,4 @@
-# -
-因为懒，所以写一个小工具
+# -因为懒，所以写一个小工具
 <#
 .SYNOPSIS
     System Ecosystem Collector V4 (Ultimate IE Deep Search，这名字专业不？)
