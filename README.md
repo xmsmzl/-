@@ -104,7 +104,7 @@ $PeripheralsExport = $Peripherals | ForEach-Object {
 Write-ToSheet -SheetName "2-外设列表" -Data $PeripheralsExport -Headers @("设备名称", "类别", "厂商", "设备ID")
 
 # ========================================================
-# 3. 浏览器插件 (IE 强力修复版，没办法只能这样绕路)
+# 3. 浏览器插件 (IE 强力修复版，实验多次，没办法只能这样绕路)
 # ========================================================
 Write-Host "3/3 正在读取浏览器插件..."
 $AllExtensions = @()
@@ -146,7 +146,7 @@ foreach ($BrowserName in $Browsers.Keys) {
     }
 }
 
-# --- B. IE 插件 (V4 核心：双向查找 + DLL 强制解析)（没错，已经是第四版了） ---
+# --- B. IE 插件 (V4 核心：双向查找 + DLL 强制解析)（修改第四版） ---
 
 # 定义函数：通过 CLSID 查找真实名称
 function Get-ClsidRealName {
