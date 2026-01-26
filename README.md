@@ -145,7 +145,7 @@ foreach ($BrowserName in $Browsers.Keys) {
     }
 }
 
-# --- B. IE 插件 (V4 核心：双向查找 + DLL 强制解析)（修改第四版） ---
+# --- B. IE 插件 (双向查找 + DLL 强制解析)（修改第四版） ---
 
 # 定义函数：通过 CLSID 查找真实名称
 function Get-ClsidRealName {
